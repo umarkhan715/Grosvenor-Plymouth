@@ -1,0 +1,33 @@
+
+.discover-main{
+    background-color: aquamarine;
+    height: 100vh;
+    margin-top: -50px;
+}
+
+.discoverd-bg{
+    background: url("../images//discoverbg.png");
+    background-size: 100% 100%;
+}
+
+.discover-content h1{
+    
+    
+    margin-top: 28%;
+    margin-left: 10%;
+    font-size: 3rem;
+}
+
+.discover-button{
+    margin-left: 10%;
+    background-color: #E1963D;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    transition-duration: 1s;
+
+}
+.discover-button:hover{
+    transform: scale(1.1) translateX(15px);
+
+}

@@ -1,0 +1,35 @@
+.toogle-dropdown-option{
+    background-color: rgb(239, 239, 239);
+    /* border: 1px solid black; */
+    width: 91%;
+    box-shadow: inset;
+    margin-left: 20px;
+    line-height: 50px;
+    word-spacing: 0.5in;
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+    /* margin-top: 50px; */
+    visibility: visible;
+   
+}
+
+.label-boxes{
+    position: absolute;
+    border: 1px solid #E1963D;
+    width: 90%;
+    height: 5.7vh;
+    padding: 10px;
+    border-radius: 5px;
+    top: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+.ok-button{
+    background-color: rgb(183, 183, 183);
+    margin:15px;
+    width: 100px;
+    padding: 0px;
+    height:45px;
+    border-radius: 5px;
+}

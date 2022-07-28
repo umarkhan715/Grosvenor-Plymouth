@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro&display=swap');
+
+.main {
+    background-color: #ECECEC;
+    height: 65vh;
+    width: 100vw;
+    padding-top: 100px;
+    padding: 0;
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+.conatiner_ameneties {
+    background-color: #d1cfcc;
+    height: 60vh;
+    /* text-align: center; */
+    padding: 5vh;
+    border-radius: 30px;
+   
+}
+
+.cards_left {
+    background-color: #d1cfcc;
+    height: 50vh;
+    width: 50vw;
+    padding: 20px;
+    border-radius: 30px;
+}
+.cards_right {
+    /* background-color: bisque; */
+    height: 60vh;
+    /* background: url('../images/details-3.jpeg'); */
+    margin-right: -2.2vw;
+    margin-top: -5vh;
+    border-radius: 30px;
+    
+}
+.room_img{
+    height: 60vh;
+    width: 100%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.Ameneties_heading{
+    text-align: center;
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+
+.image_gallery{
+    background-color: #E1963D;
+    position: absolute;
+    top: 0;
+}   
+

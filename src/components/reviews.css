@@ -1,0 +1,91 @@
+.reviews-heading {
+    text-align: start;
+    font-family: 'Tai Heritage Pro', serif;
+    background-color: #acacac0e;
+    color: rgb(0, 0, 0);
+    padding-left: 5%;
+    z-index: -10;
+    position: relative;
+}
+.review-main{
+    background-color: #acacac;
+    height: 100%;
+}
+
+.reviews-bg1{
+    background: url("../images/1.jpeg");
+    background-size: 100% 100%;
+
+}
+.reviews-bg2{
+    background: url("../images/2.jpeg");
+    background-size: 100% 100%;
+
+}
+
+.explore-button{
+    position: absolute;
+    background-color: #E1963D;
+    height: 35px;
+    width: 5vw;
+    box-shadow: none !important;
+    border-radius: 5px;
+    color: white;
+    /* display: block; */
+    /* float: right; */
+    margin-top: -2.6%;
+    margin-left: 90%;
+    z-index: -1;
+    
+  }
+.container {
+    margin-top: 50px;
+    background-color: #f8f6f6;
+    
+}
+
+.ct-height{
+    height: 50vh;
+}
+.left-column{
+    background-color: #1e1d256f;
+}
+
+.container-fluid .testimonial-wrapper {
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.container-fluid .testimonial-wrapper:hover {
+    margin-top: -3px;
+}
+
+.container-fluid .testimonial-wrapper .testimonial {
+    background: #625f5f27;
+    box-shadow: 0 3px 15px #adacb6;
+    border-radius: 4px;
+    padding: 20px;
+    color: black;
+}
+
+.container-fluid .testimonial-wrapper .testimonial .quote {
+    font-size: 1.3rem;
+    color: black;
+    z-index: 1;
+    font-family: halyard-text, sans-serif;
+    font-weight: 10;
+    font-style: normal;
+    letter-spacing: 0.02rem;
+}
+
+.container-fluid .testimonial-wrapper .testimonial .attribution {
+    color: #d78118;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding-top: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    font-style: normal;
+}
