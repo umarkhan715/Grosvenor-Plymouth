@@ -1,12 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 
-/* body {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  background: #fff;
-  line-height:26px;
-} */
 
 .content h1 {
     font-family: "Lato", sans-serif;
@@ -27,28 +21,39 @@
 .content {
     
     line-height: 20px;
+    height: auto;
     margin: auto;
     width: 60%;
     border: 3px solid #E1963D;
     padding: 10px;
-    /* z-index: -1; */
-
-    
+    position: relative;
+    z-index: -1;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 80%;
+        font-size: 6px;
+    
+    }
+    
+  }
+  
 
 
 
 .question {
+    /* background-color: aliceblue; */
     color: rgb(0, 0, 0);
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     margin: 0;
     padding: 10px 10px 10px 50px;
     display: block;
     width: 100%;
     cursor: pointer;
-    z-index: -1;
+    z-index: 0;
 }
 
 .answers {
@@ -57,7 +62,6 @@
     margin: 0px 0;
     height: 0;
     overflow: hidden;
-    z-index: -1;
     position: relative;
     opacity: 0;
     -webkit-transition: .7s ease;
@@ -65,7 +69,7 @@
     -o-transition: .7s ease;
     transition: .7s ease;
     color: rgb(0, 0, 0);
-    z-index: 10;
+    z-index: -1;
     border-radius: 15px;
 }
 
@@ -92,7 +96,6 @@
     -moz-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
-    z-index: -1;
 }
 
 .questions:checked~.plus {

@@ -1,0 +1,30 @@
+.Carousel-body-style{
+    margin-top: 100px;
+    height: 87vh;
+    z-index:-9999;
+   
+}
+
+.Carousel-body-item-style{
+    height: 87vh;
+
+}
+
+
+.slider-image{
+    height: 87vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .Carousel-body-style{
+        height: 30vh;
+    }
+    .Carousel-body-item-style{
+        height: 30vh;
+    }
+    .slider-image{
+        height: 30vh;
+    }
+    
+  }
+

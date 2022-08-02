@@ -111,6 +111,8 @@ export default function DiscoverPlymouthDetail() {
 
       </section>
       <Footer/>
+
+      
     </div>
   )
 }

@@ -143,7 +143,7 @@ const Carousel = () => {
 
   return (
     <>
-     <h1 className='reviews-heading container' id="about">Hotel Facilities</h1>
+     <h1 className='reviews-heading container head-box'>Hotel Facilities</h1>
      <button className='explore-button' onClick={handleExplore}>Explore</button>
     <div className="carousel__wrap" >
       <div className="carousel__inner">

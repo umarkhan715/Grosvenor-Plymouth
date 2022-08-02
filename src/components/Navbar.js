@@ -17,71 +17,99 @@ import Rules from "../sections/Rules";
 import banner from '../images/partition.png';
 import Footer from "../sections/Footer";
 import Styles from "./navbar.module.css";
-import { fontSize } from "@mui/system";
+// import { fontSize } from "@mui/system";
 
 
 export default function Navbar() {
 
   return (
 
-    <div style={{
-      position: 'absolute',
-      zIndex: '-9999'
-    }}>
+    // <div style={{
+    //   position:'relative',
+    //   zIndex: '-9999'
+    // }}>
+    <>
       <div className="form">
         <Form />
       </div>
 
-        <header className={Styles.nav}>
-          <nav className={Styles.nav__container__actions} >
-            <ul>
-              <li>
-                <Link activeClass={Styles.active} smooth spy to="about">
-                  Facilities
-                </Link>
-              </li>
+      <header className={Styles.nav}>
+        <nav className={Styles.nav__container__actions} >
+          <ul>
+            <li>
+              <Link activeClass={Styles.active} smooth spy to="facilities">
+                Facilities
+              </Link>
+            </li>
 
-              <li>
-                <Link activeClass={Styles.active} smooth spy to="projects">
-                  Rooms
-                </Link>
-              </li>
+            <li>
+              <Link activeClass={Styles.active} smooth spy to="rooms">
+                Rooms
+              </Link>
+            </li>
 
-              <li>
-                <Link activeClass={Styles.active} smooth spy to="blog">
-                  Discover
-                </Link>
-              </li>
+            <li>
+              <Link activeClass={Styles.active} smooth spy to="discover">
+                Discover
+              </Link>
+            </li>
 
-              <li>
-                <Link activeClass={Styles.active} smooth spy to="contact">
-                  Rules
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+            <li>
+              <Link activeClass={Styles.active} smooth spy to="rules">
+                Rules
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-
+      <div style={{
+        position: 'relative',
+        zIndex: '-1'
+      }}>
         <Home />
+      </div>
+
+      <div style={{
+        position: 'relative',
+        zIndex: '-1'
+      }} id='facilities'>
+
         <img className="parttion-image" src={banner} alt="Partition-Image" />
         <Ameneties />
+      </div>
+
+      <div style={{
+        position: 'relative',
+        zIndex: '-1'
+      }} id='rooms'>
         <img className="parttion-image" src={banner} alt="Partition-Image" />
         <OurRooms />
         <img className="parttion-image" src={banner} alt="Partition-Image" />
         <Offers />
         <About />
+      </div>
+
+      <div style={{
+        position: 'relative',
+        zIndex: '-1'
+      }} id='discover'>
         <img className="parttion-image" src={banner} alt="Partition-Image" />
         <Discover />
+      </div>
+
+      <div id='rules'>
         <img className="parttion-image" src={banner} alt="Partition-Image" />
         <Rules />
-        <Footer />
-    
+      </div>
+
+      <Footer />
 
 
 
+    </>
 
-    </div>
+
 
 
 

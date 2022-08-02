@@ -5,11 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  z-index: -9999;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root{
+  position: relative;
+  z-index: -9999;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 0px 10px 10px 0px;
+  }
+  
 }
 
 

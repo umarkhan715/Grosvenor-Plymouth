@@ -16,7 +16,7 @@ export default function Home() {
     <>
     
       <Slider/>
-      <div id="about">
+      <div>
       <img className="parttion-image" src={banner} alt="Partition-Image"/>
       </div>
     <React.Fragment>

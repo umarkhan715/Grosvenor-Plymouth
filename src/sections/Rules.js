@@ -5,7 +5,7 @@ export default function Rules() {
     return (
         <div >
 
-            <main className="header-offset content-wrapper about-wrapper"  id="contact" >
+            <main className="header-offset content-wrapper about-wrapper" >
                 <div className="terms-container container">
                     <div className="row">
                         <div className="col-sm-12 col-sm-offset-2">

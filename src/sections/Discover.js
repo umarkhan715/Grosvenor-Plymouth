@@ -10,7 +10,10 @@ export default function Discover() {
   }
   return (
     // <div>
-      <div className='container-fluid' id="blog">
+      <div className='container-fluid' style={{
+        position:'relative',
+        zIndex:'-1'
+      }}>
         <div className='row discover-main'>
             <div className='col-12 discoverd-bg'>
               <div className='col-6 discover-content ml-5 pl-4'>

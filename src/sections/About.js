@@ -6,7 +6,10 @@ import Reviews from '../components/Reviews';
 
 export default function About() {
   return (
-    <div id='id-about'>
+    <div style={{
+      position:'relative',
+      zIndex:'-100'
+    }}>
       <Reviews/>
       {/* <CancellationPolicy/> */}
       <Faqs/>

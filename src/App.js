@@ -20,6 +20,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AmenetiesDetail from "./pages/AmenetiesDetail";
 import DiscoverPlymouthDetail from './pages/DiscoverPlymouthDetail';
 import RoomsDetail from './pages/RoomsDetail';
+import ReviewsPage from './pages/ReviewsPage';
 // import banner from './images/partition.png';
 // import Footer from "./sections/Footer";
 // const RenderHome = () => {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/amenetiesandservices" element={<AmenetiesDetail />} />
           <Route path="/discoverplymouth" element={<DiscoverPlymouthDetail />} />
           <Route path="/rooms" element={<RoomsDetail />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
 
 
         </Routes>

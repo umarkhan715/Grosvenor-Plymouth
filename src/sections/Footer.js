@@ -1,7 +1,13 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import './Footer.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import logo from '../images/logo.png'
+// import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro'
 
+library.add(faFacebookF); 
 export default function Footer() {
     let navigate = useNavigate();
 
@@ -29,7 +35,10 @@ export default function Footer() {
 
                 <div className="footer-left">
 
-                    <h3>Company<span>logo</span></h3>
+                    <img src={logo} style={{
+                        height:'10vh',
+                        width:'6vw'
+                    }}/>
 
                     <p className="footer-links">
                         <button className="m-2" onClick={handleHome}>Home</button>
@@ -76,10 +85,11 @@ export default function Footer() {
 
                     <div className="footer-icons">
 
-                        <a href="https://www.facebook.com"><i className="fa fa-facebook"></i></a>
-                        <a href="https://www.twitter.com"><i className="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com"><i className="fa fa-linkedin"></i></a>
-                        <a href="https://www.github.com"><i className="fa fa-github"></i></a>
+                        <a href="https://www.facebook.com"><FontAwesomeIcon className='fa-sm' icon={['fab', 'facebook-f']} /></a>
+                        <a href="https://www.twitter.com"><i className="fab fa-twitter fa-sm"></i></a>
+                        <a href="https://www.linkedin.com"><i className="fab fa-linkedin fa-sm"></i></a>
+                        <a href="https://www.github.com"><i className="fab fa-github fa-sm"></i></a>
+                        
 
                     </div>
 

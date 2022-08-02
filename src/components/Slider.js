@@ -1,6 +1,7 @@
-import zIndex from '@mui/material/styles/zIndex';
+
 import React from 'react'
 import { Carousel } from "react-bootstrap";
+import './Slider.css'
 
 import img1 from "../images/image1.jpg"
 import img2 from "../images/image2.jpg"
@@ -12,33 +13,25 @@ export default function Slider() {
     return (
         
 
-            <Carousel style={{
-                marginTop:'100px',
-                height:'80vh',
-                zIndex:'-9999'
-            }}>
-                <Carousel.Item>
+            <Carousel className='Carousel-body-style'>
+                <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"
                         src={img1}
                         alt="First slide"
-                        style={{
-                            height:'90vh'
-                        }}
+                    
                     />
                     <Carousel.Caption  className="slider-caption">
                         <h3>Room Booking</h3>
                  
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"
                         src={img2}
                         alt="Second slide"
-                        style={{
-                            height:'90vh'
-                        }}
+                         
                     />
 
                     <Carousel.Caption  className="slider-caption">
@@ -46,14 +39,12 @@ export default function Slider() {
 
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"
                         src={img3}
                         alt="Third slide"
-                        style={{
-                            height:'90vh'
-                        }}
+                         
                     />
 
                     <Carousel.Caption  className="slider-caption">
@@ -62,14 +53,12 @@ export default function Slider() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item>
+                <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"
                         src={img4}
                         alt="Third slide"
-                        style={{
-                            height:'90vh'
-                        }}
+                         
                     
                     />
 
@@ -79,14 +68,12 @@ export default function Slider() {
                     </Carousel.Caption>
                 </Carousel.Item>
 
-                <Carousel.Item>
+                <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"
                         src={img5}
                         alt="Third slide"
-                        style={{
-                            height:'90vh'
-                        }}
+                         
                     />
                     
 
