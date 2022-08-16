@@ -371,8 +371,8 @@ export default function App() {
 
     getData(current, size).map((data, index) => {
       return /*#__PURE__*/(
-        React.createElement("p",  { key: data.id }, /*#__PURE__*/
-        React.createElement("p", { className: "reviews-data" }, null), /*#__PURE__*/
+        React.createElement("h5",  { key: data.id }, /*#__PURE__*/
+        React.createElement("h4", { className: "reviews-data" }, null), /*#__PURE__*/
         React.createElement("h3", null, data.name), /*#__PURE__*/
         React.createElement("h5", null, data.position),
         React.createElement("small", null, data.gender), /*#__PURE__*/));
@@ -395,12 +395,4 @@ export default function App() {
       showSizeChanger: false,
       itemRender: PrevNextArrow,
       onShowSizeChange: PerPageChange })))))))));
-
-
-
-
-
-
-
-
 };

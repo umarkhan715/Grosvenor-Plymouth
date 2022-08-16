@@ -25,7 +25,7 @@ export default function Footer() {
         navigate("/discoverplymouth", { replace: true });
       }
       function handleReviews(event) {
-        navigate("../success", { replace: true });
+        navigate("/reviews", { replace: true });
       }
     return (
         <div>
@@ -35,10 +35,7 @@ export default function Footer() {
 
                 <div className="footer-left">
 
-                    <img src={logo} style={{
-                        height:'10vh',
-                        width:'6vw'
-                    }}/>
+                    <img src={logo}/>
 
                     <p className="footer-links">
                         <button className="m-2" onClick={handleHome}>Home</button>

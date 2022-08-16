@@ -5,9 +5,11 @@ import "flatpickr/dist/themes/material_orange.css"
 export default function App() {
   return (
     <div style={{
-      backgroundColor:'black',
+      backgroundColor:'white',
       width:'100vw',
-      marginTop:'-103px', 
+      marginTop:'-103px',
+      position:'relative',
+      zIndex:-1
     }}>
       <BookingForm />
     </div>

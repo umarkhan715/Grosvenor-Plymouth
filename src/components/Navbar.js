@@ -17,25 +17,37 @@ import Rules from "../sections/Rules";
 import banner from '../images/partition.png';
 import Footer from "../sections/Footer";
 import Styles from "./navbar.module.css";
+import './navbarcontrol.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { fontSize } from "@mui/system";
 
 
 export default function Navbar() {
+  const [show, setShow] = useState(false);
+
+  const controlNavbar = () => {
+        setShow(!show); 
+      }
 
   return (
 
-    // <div style={{
-    //   position:'relative',
-    //   zIndex: '-9999'
-    // }}>
     <>
       <div className="form">
         <Form />
       </div>
-
+      
+      <div  className={`activeNavbar ${show && 'disableNavbar '}`}>
+        
       <header className={Styles.nav}>
+      
         <nav className={Styles.nav__container__actions} >
           <ul>
+         <div style={{
+          marginTop:'-18px',
+          position:'fixed'
+         }}>
+          
+          </div>
             <li>
               <Link activeClass={Styles.active} smooth spy to="facilities">
                 Facilities
@@ -61,7 +73,11 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
+        
       </header>
+      
+      </div>
+      <button className="Navbutton" onClick={controlNavbar}><i className={`fa fa-bars ${show && 'fa fa-times'}`}></i></button>
 
       <div style={{
         position: 'relative',

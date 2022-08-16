@@ -2,10 +2,44 @@
     font-size: 15px;
 }
 
+.logo-header{
+    background-color: transparent;
+}
+.form-bg-container{
+    padding-top: 10px;
+    height: 13.5vh;
+}
+
 @media only screen and (max-width: 600px) {
     .search-Button{
         font-size: 10px;
     }
-    
+    .logo-header{
+        left: 30%;
+        padding-bottom: 20px;
+    }
+    .form-bg-container{
+        height: 25%;
+        padding-bottom: 10px;
+    }
+    .showNavbar{
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        transition: 0.3s linear;
+        align-items: center;
+        background-color: #ffffff;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        z-index: 1000;
+        box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
+      
+      }
+      .hideNavbar{
+        top: -90px;
+        transition: 0.25s linear;
+      
+      }
   }
+
+
   

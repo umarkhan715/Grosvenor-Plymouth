@@ -1,0 +1,49 @@
+.activeNavbar{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    transition: 0.3s linear;
+    transform: translateX(0px) translateY(250px);
+  }
+  .disableNavbar{
+    transform: translateX(-100px) translateY(250px);
+    transition: 0.3s linear;
+  
+  }
+  .Navbutton{
+    margin-left:85px;
+    position: absolute;
+  }
+  .Navbutton i {
+    background-color: wheat;
+    width: 60px;
+    height: 60px;
+    margin-top: 35%;
+    margin-left: 89%;
+    padding: 18px;
+    border-radius: 50%;
+    color: #E1963D;
+    font-size: 1.8rem;
+    position: fixed;
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .Navbutton{
+        visibility: visible;
+        margin-left: -10%;
+        margin-top: 80%;
+        position: -webkit-sticky;
+        position: fixed;
+      }
+      .disableNavbar{
+        transform: translateX(-108px) translateY(250px);
+        transition: 0.3s linear;
+      
+      }
+      .Navbutton i {
+        font-size: 2.5rem;
+
+      }
+    
+  }

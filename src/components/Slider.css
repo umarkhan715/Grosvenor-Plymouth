@@ -17,6 +17,7 @@
 
 @media only screen and (max-width: 600px) {
     .Carousel-body-style{
+        margin-top: 200px;
         height: 30vh;
     }
     .Carousel-body-item-style{

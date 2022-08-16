@@ -18,9 +18,11 @@ import Navbar from "./components/Navbar";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AmenetiesDetail from "./pages/AmenetiesDetail";
-import DiscoverPlymouthDetail from './pages/DiscoverPlymouthDetail';
+// import DiscoverPlymouthDetail from './pages/DiscoverPlymouthDetail';
+import DiscoverArea from './pages/DiscoverArea';
 import RoomsDetail from './pages/RoomsDetail';
 import ReviewsPage from './pages/ReviewsPage';
+// import MapsApi from './mapcomponents/MapsApi';
 // import banner from './images/partition.png';
 // import Footer from "./sections/Footer";
 // const RenderHome = () => {
@@ -42,14 +44,14 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/amenetiesandservices" element={<AmenetiesDetail />} />
-          <Route path="/discoverplymouth" element={<DiscoverPlymouthDetail />} />
+          <Route path="/discoverplymouth" element={<DiscoverArea />} />
           <Route path="/rooms" element={<RoomsDetail />} />
           <Route path="/reviews" element={<ReviewsPage />} />
 
 
         </Routes>
       </BrowserRouter>
-
+      {/* <MapsApi/> */}
 
 
 

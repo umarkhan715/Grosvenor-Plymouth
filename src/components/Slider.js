@@ -10,10 +10,12 @@ import img4 from "../images/image4.jpg"
 import img5 from "../images/image5.jpg"
 
 export default function Slider() {
+
+    
     return (
         
 
-            <Carousel className='Carousel-body-style'>
+            <Carousel fade className='Carousel-body-style'>
                 <Carousel.Item className='Carousel-body-item-style'>
                     <img
                         className="d-block w-100 slider-image"

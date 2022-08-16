@@ -2,6 +2,9 @@ import React from 'react'
 import Styles from './Rooms.module.css'
 import Rooms from './Rooms';
 import Footer from '../sections/Footer';
+import Gallery from './Gallery';
+import Form from '../components/Form';
+import Position from 'rsuite/esm/Overlay/Position';
 
 
 
@@ -50,20 +53,30 @@ const theData = [
 export default function RoomsDetail() {
   return (
     <>
-      
 
-      <div>
+      <div className="form">
+        <Form />
+      </div>
+      <div style={{
+        position:'relative',
+        zIndex:-1
+      }}>
         <div style={{
+          marginTop: '100px',
           paddingTop: '50px',
-          backgroundColor: '#ECECEC'
+          backgroundColor: 'transparent',
+          // backgroundColor: '#ECECEC',
+          position: 'relative',
+          zIndex: -1
         }}>
           <h1 className={Styles.Ameneties_heading}>Rooms</h1>
 
           {theData}
         </div>
-        <Footer/>
+
+        <Footer />
       </div>
-    
+
     </>
   )
 }

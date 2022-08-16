@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import Styles from './Rooms.module.css'
 import ReactImageGalleryTest from './RoomGallery';
+import Gallery from './Gallery'
+  
 
 
 
@@ -13,10 +15,13 @@ export default function Rooms(props) {
   }
   return (
     <>
+
       <div className={Styles.main}>
         <div className={`container ${Styles.conatiner_ameneties}`} >
           <div className='row'>
-            <div className='col-8'>
+            <div className='col-8' style={{
+              height:'50vh'
+            }}>
               <div className={Styles.cards_left}>
                 <div><h1>{props.title}</h1></div>
                 <div><p>{props.desc}</p></div>
@@ -25,14 +30,17 @@ export default function Rooms(props) {
             </div>
             <div className='col-4' >
               <div className={Styles.cards_right}>
-                <img className={Styles.room_img} src={props.image} alt='room' onClick={ShowGallery} placeholder="clickhere"/>
+                {/* <img className={Styles.room_img} src={props.image} alt='room' onClick={ShowGallery} placeholder="clickhere"/> */}
+                <div className={Styles.room_img}>
+                <Gallery/>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {isPreviewShown && <ReactImageGalleryTest/>}
+      {/* {isPreviewShown && } */}
 
 
     </>
